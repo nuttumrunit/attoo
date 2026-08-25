@@ -37,8 +37,3 @@ Database schemas, migrations, and Edge Functions are located in [`supabase/`](su
 ## Principle
 
 Sattoo does not provide personalized financial advice and will never ask for seed phrases, private keys, passwords, or authentication codes.
-
-## Token
-
-- [Pump.fun](https://pump.fun/coin/BEDBtweTsBEVqKYqkUX2DFenbWXk4gUmp5w9WKD3pump)
-- CA: `BEDBtweTsBEVqKYqkUX2DFenbWXk4gUmp5w9WKD3pump`
