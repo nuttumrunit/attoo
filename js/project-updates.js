@@ -3,6 +3,9 @@
     if (!updates) return;
 
     const entries = [
+        ["AUG 25, 2026", "The Sattoo token is now live on <a href=\"https://pump.fun/coin/5zLj8k5jN2WsYbV1HQWt3mCnsBH43t7LyU5vVxHtpump\" target=\"_blank\" rel=\"noopener noreferrer\">Pump.fun</a>. The launch opens a new public chapter for the archive."],
+        ["AUG 25, 2026", "The official contract address is now published on the homepage: <span style=\"overflow-wrap:anywhere;color:#bfeaff\">5zLj8k5jN2WsYbV1HQWt3mCnsBH43t7LyU5vVxHtpump</span>. Always verify it here before interacting."],
+        ["AUG 25, 2026", "A new Sattoo journal entry is online: <a href=\"/journals/sattoo/the-token-is-live/\">The Token Is Live. The Archive Continues.</a>"],
         ["AUG 25, 2026", "The complete Sattoo sitemap is now online, with dedicated pages for the project, memory, mind, research, and library."],
         ["AUG 25, 2026", "The Project archive was rebuilt as four distinct records: <a href=\"/project/developer/\">The Developer</a>, <a href=\"/project/directive/\">The Directive</a>, <a href=\"/project/training/\">Training</a>, and <a href=\"/project/boundaries/\">Boundaries</a>."],
         ["AUG 25, 2026", "The Memory section opened its origin story, visual timeline, turning-point files, standalone XMR chapter, and crypto graveyard."],
