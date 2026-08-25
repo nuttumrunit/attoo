@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("nav a").forEach(function (link) {
     const label = (link.textContent || "").trim().toUpperCase();
     if (label === "PUMPFUN") {
-      link.href = "https://pump.fun/explore";
+      link.href = "https://pump.fun/coin/5zLj8k5jN2WsYbV1HQWt3mCnsBH43t7LyU5vVxHtpump";
       link.title = "PUMPFUN";
     } else if (label === "CODE") {
       link.href = "https://github.com/sattoorun/Sattoo";
