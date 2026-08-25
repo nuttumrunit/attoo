@@ -12,7 +12,9 @@ function walk(directory) {
       walk(target);
     } else if (textExtensions.has(path.extname(entry.name).toLowerCase())) {
       const source = fs.readFileSync(target, "utf8");
-      const prefixed = source.replace(/(["'])\/(?!\/|Sattoo(?:\/|["']))/g, `$1${base}/`);
+      const prefixed = source
+        .replace(/(["'])\/(?!\/|Sattoo(?:\/|["']))/g, `$1${base}/`)
+        .replace(/url\(\s*\/(?!\/|Sattoo(?:\/|\)))/g, `url(${base}/`);
       if (prefixed !== source) fs.writeFileSync(target, prefixed);
     }
   }
