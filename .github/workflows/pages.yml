@@ -27,9 +27,6 @@ jobs:
         run: |
           mkdir _site
           rsync -a --exclude=.git --exclude=.github --exclude=node_modules --exclude=_site --exclude=dist ./ _site/
-          node scripts/prefix-pages-paths.mjs _site /Sattoo
-          grep -F 'href="/Sattoo/sky-background.css' _site/index.html
-          grep -F 'src="/Sattoo/images/sattoo-home-hero.png' _site/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
