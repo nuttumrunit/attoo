@@ -1,0 +1,589 @@
+
+html {
+
+}
+
+
+@layer reset, defaults, themes, utilities;
+
+body nav {
+    position: sticky;
+    top: 0;
+}
+
+/* ===========
+	THEMES
+=========== */
+
+@layer themes {
+
+:root {
+	--fore-colour: white;
+	--hot-colour: lightblue;
+	--cold-colour: lightblue;
+}
+
+/* =========== END THEMES */ }
+
+
+
+/* ==========
+	RESET
+========== */
+
+@layer reset {
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/* ========== END RESET */ }
+
+
+
+/* ==============
+	UTILITIES
+============== */
+
+@layer utilities {
+
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.undo-case {
+	text-transform: none;
+}
+
+/* ============== END UTILITIES */ }
+
+
+
+/* ==============
+	DEFAULTS
+============== */
+
+@layer defaults {
+
+/* STRUCTURE */
+
+:root {
+	--gap: 1.5rem;
+	--line: 5px solid #00243B;
+	--interface-font-size: 1.2em;
+	--meta-font-size: 0.8em;
+}
+body {
+	font-size: 18px;
+	font-family: sans-serif;
+	margin: 0;
+	color: var(--fore-colour);
+	    background-image: url(/images/triangle3-seamless2.png);
+    overflow-y: scroll;
+	line-height: 1.5;
+}
+#skip-link {
+	position: absolute;
+	clip-path: inset(50%);
+	color: var(--back-colour);
+	background-color: var(--fore-colour);
+	&:focus {
+		clip-path: unset;
+	}
+}
+#container {
+background: url(/images/triangle3-seamless3.png);
+    background-size: contain;
+    margin: 2rem auto;
+    margin-top: 5px;
+        border-radius: 15px;
+ font-family: "Prompt";
+    text-align: center;
+        font-weight: bolder;
+    font-size: 16px;
+    text-shadow: #062c40BF -2px 2px 2px;
+	max-inline-size: 1080px;
+	border-inline: var(--line);
+	& > * {
+		padding-inline: 1rem;
+	}
+    
+}
+    
+#container2 {
+    background-image: url(/images/header9.png);
+    width: 100%;
+    min-width: 100%;
+    height: 120px;
+    background-repeat: repeat-x;
+    position: relative;
+
+    z-index: 1000000;
+    display: block;
+text-align: center;
+    
+    }
+}
+    
+.flex-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-inline-start: 0;
+	list-style-type: "";
+}
+
+/* HEADER */
+
+#header {
+	color: var(--back-colour);
+	background-color: #00243B;
+    border-radius: 15px;
+	* {
+		margin-block: 0;
+	}
+}
+#main-nav {
+	a {
+		display: block;
+		padding-block-start: 0.3em;
+		padding-block-end: 0.2em;
+		padding-inline: 0.4em;
+		font-size: var(--interface-font-size);
+		color: var(--back-colour);
+		text-decoration: unset;
+        position: relative;
+		&:hover {
+			background-color: #003759;
+            
+		}
+	}
+}
+#header-message {
+	padding-block-start: 0.3rem;
+	padding-block-end: 0.2rem;
+	padding-inline: 0.5rem;
+	border-block-start: var(--line);
+	border-color: var(--back-colour);
+	&::before {
+		content: "\25c9 \a0"; /* fisheye + non-breaking space */
+		color: var(--hot-colour);
+	}
+	a {
+		color: inherit;
+		background-color: inherit;
+	}
+}
+
+/* TEXT */
+:is(h1, h2, h3) + * {
+	margin-block-start: 0;
+}
+h1 {
+	margin-block-start: 1rem;
+	margin-block-end: 0;
+}
+h2 {
+	margin-block-start: 1rem;
+	margin-block-end: 0.25rem;
+}
+h3 {
+	margin-block-start: 2rem;
+	margin-block-end: 0.25rem;
+}
+details {
+	margin-block: 1rem;
+	margin-inline-start: var(--gap);
+}
+summary {
+	cursor: pointer;
+	font-weight: bold;
+	margin-inline-start: -1rem;
+	& + * {
+		margin-block-start: 0;
+	}
+}
+a:link {
+	color: var(--hot-colour);
+}
+a:visited {
+	color: var(--cold-colour);
+}
+a:hover {
+	color: var(--back-colour);
+	&:link {
+		background-color: #003759;
+	}
+	&:visited {
+		background-color: #003759;
+	}
+}
+code {
+	font-size: 0.8em;
+}
+.code-block {
+	display: block;
+	margin-block: 1rem;
+	color: var(--back-colour);
+	background-color: var(--fore-colour);
+	overflow-x: auto;
+	white-space: pre;
+	tab-size: 4ch;
+}
+blockquote {
+	margin-inline: var(--gap);
+}
+::marker {
+	color: var(--hot-colour);
+}
+
+/* MEDIA */
+
+
+figure {
+	margin-inline: var(--gap);
+}
+figcaption {
+	text-align: center;
+	blockquote + &::before {
+		content: "\2014 \a0"; /* em dash + non-breaking space */
+	}
+}
+.gallery {
+	--gallery-cols: 1;
+	display: grid;
+	grid-template-columns: repeat(var(--gallery-cols), 1fr);
+	gap: calc(2rem / var(--gallery-cols));
+	padding-left: 0;
+	list-style-type: "";
+	&:has(:nth-child(2)) {
+		--gallery-cols: 2;
+	}
+	&:has(:nth-child(5)) {
+		--gallery-cols: 3;
+	}
+	&:has(:nth-child(10)) {
+		--gallery-cols: 4;
+	}
+	img {
+		height: 100%;
+		width: 100%;
+		aspect-ratio: 1;
+		object-fit: cover;
+	}
+}
+iframe {
+	max-inline-size: 100%;
+	display: block;
+	margin-block: 1rem;
+	border: var(--line);
+}
+
+/* POST LISTS */
+
+.post-list {
+	padding-inline-start: var(--gap);
+	list-style-type: "";
+	text-indent: calc(-1 * var(--gap));
+	font-size: var(--interface-font-size);
+}
+
+
+#tag-index {
+	padding-inline-start: 0;
+	list-style-type: "";
+	details {
+		margin-block: 0;
+	}
+	[open] {
+		margin-block-end: 1rem;
+	}
+	summary {
+		font-size: var(--interface-font-size);
+	}
+}
+
+/* POSTS */
+
+article > header {
+	margin-block-end: 1rem;
+	h1 {
+		margin-block-end: 0.5rem;
+		font-size: 2.2rem;
+	}
+	& + * {
+		margin-block-start: 0;
+	}
+}
+#post-tags {
+	margin-block: 0;
+	& > li:not(:last-child)::after {
+		content: ",\a0"; /* comma + non-breaking space */
+	}
+	a::before {
+		content: "#";
+	}
+}
+#post-nav > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--gap);
+	padding-inline-start: 0;
+	list-style-type: "";
+	& > :first-child > a::before {
+		content: "\2190 \a0"; /* left arrow + non-breaking space */
+	}
+	& > :last-child {
+		text-align: right;
+		a::after {
+			content: "\2192 \a0"; /* right arrow + non-breaking space */
+		}
+	}
+}
+
+#post-nav2 > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--gap);
+	padding-inline-start: 0;
+	list-style-type: "";
+	& > :first-child > a::before {
+		content: "\2190 \a0"; /* left arrow + non-breaking space */
+	}
+	& > :last-child {
+		text-align: right;
+		a::after {
+			content: "\2192 \a0"; /* right arrow + non-breaking space */
+		}
+	}
+}
+
+/* FOOTER */
+
+#footer {
+    background-image: url(/images/footer2.png);
+    background-size: cover;
+	padding-block-start: 1rem;
+    border-radius: 15px;
+	font-size: var(--meta-font-size);
+    padding: 20px;
+    padding-top: 50px;
+    
+    
+	[rel="return"]::before {
+		content: "\2191 \a0"; /* up arrow + non-breaking space */
+	}
+}
+#contact-links {
+	& > li:not(:last-child)::after {
+		content: "\a0 |\a0"; /* non-breaking space + pipe + non-breaking space */
+        
+	}
+}
+
+/* ============== END DEFAULTS */ }
+
+
+.img-float {
+
+    position: fixed;
+    bottom: 10px;
+    right: -250px;
+    max-height: 30%;
+    z-index: -1;
+    padding-bottom: 5px;
+
+}
+
+.img-float2 {
+
+    position: fixed;
+    bottom: 0px;
+    left: -280px;
+    max-height: 30%;
+    z-index: -1;
+    padding-bottom: 5px;
+}
+
+.tbox {
+    background:rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    padding-top: 1px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+
+button {
+    background: url(/images/button2.png);
+    background-size: 120%;
+    border: none;
+    font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    user-select: none;
+    color: white;
+    letter-spacing: 1px;
+    outline: 3px solid #00243B;
+    border-color: white;
+    border-radius: 5px;
+    padding: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration-line: none pointer-events: none;
+    font-size: 16px;
+    width: 170px;
+    line-height: 30px;
+    margin-right: 15px;
+    text-shadow: black -2px 2px 0px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+
+}
+
+button:hover {
+    background-color: #2899b0;
+    box-shadow: 0 0 0 5px white;
+    color: #bde9ff;
+
+}
+
+input[type=button] {
+    background: url(images/checker3.png);
+    background-size: 200%;
+    border: none;
+    font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    user-select: none;
+    color: white;
+    letter-spacing: 1px;
+
+    border-color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bolder;
+    text-decoration-line: none pointer-events: none;
+    font-size: 16px;
+    width: 200px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    text-shadow: #062c40BF -2px 2px 2px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    transition: 0.1s;
+    transition-timing-function: ease;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+input[type=button]:active {
+    transform: scale(0.10);
+
+
+}
+
+@media only screen and (max-width: 870px) {
+    .container2 {
+        background-image: url(/images/header9.png);
+        background-attachment: scroll;
+        width: 100%;
+        min-width: 100%;
+        height: 120px;
+        background-repeat: repeat-x;
+        position: relative;
+        z-index: 1000000;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    button {
+        width: 90px;
+        font-size: 10px;
+        text-align: center;
+        padding: 0px 0px;
+        background-size: 150%;
+        border-radius: 5px;
+        margin-top: 6px;
+    }
+    
+    
+/* image album css */
+    
+#wrapper {
+  --album-cover-size: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--album-cover-size));
+  justify-content: center;
+  gap: 8px;
+}
+
+.album {
+  position: relative; /* needed for `absolute` children to work */
+}
+
+.album img {
+  aspect-ratio: 1 / 1;
+  width: var(--album-cover-size);
+  height: var(--album-cover-size);
+}
+
+.album-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(var(--album-cover-size) + 2ch);
+  width: 30vw;
+  background: white;
+  color: black;
+  border: solid 2px black;
+  border-radius: 8px;
+  pointer-events: none; /* comment to make the details interactable */
+  padding: 1ch;
+}
+
+.album.flipped .album-details {
+  left: unset !important;
+  right: calc(var(--album-cover-size) + 2ch);
+}
+
+/* On hover */
+
+.album:hover {
+  z-index: 1;
+}
+
+.album:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px #000a;
+}
+
+.album:hover .album-details {
+  display: block;
+}

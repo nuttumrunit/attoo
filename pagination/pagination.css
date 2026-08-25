@@ -1,0 +1,70 @@
+
+
+.paginator {
+
+  display:grid;
+  grid-row-gap:1.0em;
+  grid-template-areas:"content" "navigator";
+  grid-template-columns:auto;
+  grid-template-rows:auto auto;
+
+
+}
+
+.paginator-content {
+
+  color:#202830;
+
+
+}
+
+.paginator-navigator {
+
+  align-items:center;
+  background-image: url(/images/checker2.png);
+  border-radius:8px;
+  color:#ffffff;
+  display:grid;
+  grid-area:navigator;
+  grid-template-columns:auto auto auto;
+  grid-template-rows:auto;
+  justify-content:center;
+  justify-items:center;
+  margin:0 auto;
+  padding:0 8px;
+  text-align:center;
+    outline: 3px solid #00243B;
+        font-family: "Prompt";
+    ,
+    "Bradley Hand";
+    ,
+    "Comic Sans MS";
+    ,
+    sans-serif;
+
+
+}
+
+.paginator-button {
+  position: relative;
+  cursor:pointer;
+  font-size:1.25em;
+  border-color:#ffffff;
+  padding:8px;
+  user-select:none;
+
+}
+
+.paginator-index {
+
+  font-size:1.5em;
+  font-weight:800;
+  user-select:none;
+
+}
+
+button.paginator-navigator:disabled {
+
+  display: none;
+
+}

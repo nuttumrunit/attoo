@@ -1,0 +1,1 @@
+window.addEventListener("load", (event) => { new springyEmojiPairCursor({ emoji1: "🐟", emoji2: "🐠" }); });

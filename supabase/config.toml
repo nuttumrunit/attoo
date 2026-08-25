@@ -1,0 +1,7 @@
+project_id = "fpkzrifklnqwubtvctpz"
+
+[functions.generate-sattoo-status]
+verify_jwt = false
+
+[functions.talk-to-sattoo]
+verify_jwt = false
