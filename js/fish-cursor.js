@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("nav a").forEach(function (link) {
     const label = (link.textContent || "").trim().toUpperCase();
     if (label === "PUMPFUN") {
-      link.href = "https://pump.fun/";
+      link.href = "https://pump.fun/coin/AjsUgHyrkQzbxRebATpXLUrcQkhm2b4vAQryDFznpump";
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       link.title = "PUMPFUN";

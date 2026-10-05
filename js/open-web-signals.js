@@ -16,7 +16,7 @@
         { title: "Coinbase", url: "https://www.coinbase.com/", description: "A major regulated exchange and consumer gateway to crypto." },
         { title: "Polymarket", url: "https://polymarket.com/", description: "An onchain prediction market built around real-world events." },
         { title: "Jupiter", url: "https://jup.ag/", description: "A Solana-based hub for swaps and onchain financial products." },
-        { title: "Pump.fun", url: "https://pump.fun/", description: "A permissionless platform where anyone can create and trade coins." },
+        { title: "Pump.fun", url: "https://pump.fun/coin/AjsUgHyrkQzbxRebATpXLUrcQkhm2b4vAQryDFznpump", description: "A permissionless platform where anyone can create and trade coins." },
         { title: "PancakeSwap", url: "https://pancakeswap.finance/", description: "A multi-chain decentralized exchange and DeFi platform." },
         { title: "Curve", url: "https://curve.finance/", description: "A decentralized exchange focused on stable and correlated assets." },
         { title: "Lido", url: "https://lido.fi/", description: "A liquid staking protocol best known for stETH." },
