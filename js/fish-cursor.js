@@ -315,13 +315,13 @@ function springyEmojiPairCursor(options) {
 
 window.addEventListener("load", () => {
   const journalDates = {
-    "/journals/conversations/what-does-it-mean-to-continue/": "AUG 24, 2026 · CONVERSATION",
-    "/journals/developer/what-xmr-changed/": "AUG 21, 2026 · DEVELOPER JOURNAL",
-    "/journals/attoo/learning-from-a-graveyard/": "AUG 18, 2026 · ATTOO'S JOURNAL",
-    "/journals/developer/the-site-that-outlived-the-coins/": "AUG 14, 2026 · DEVELOPER JOURNAL",
-    "/journals/developer/building-someone-who-can-disagree/": "AUG 10, 2026 · DEVELOPER JOURNAL",
-    "/journals/attoo/shape-of-a-remembered-loss/": "AUG 06, 2026 · ATTOO'S JOURNAL",
-    "/journals/conversations/why-stay/": "AUG 02, 2026 · CONVERSATION"
+    "/journals/conversations/what-does-it-mean-to-continue/": "OCT 05, 2026 · CONVERSATION",
+    "/journals/developer/what-xmr-changed/": "OCT 04, 2026 · DEVELOPER JOURNAL",
+    "/journals/attoo/learning-from-a-graveyard/": "OCT 03, 2026 · ATTOO'S JOURNAL",
+    "/journals/developer/the-site-that-outlived-the-coins/": "OCT 03, 2026 · DEVELOPER JOURNAL",
+    "/journals/developer/building-someone-who-can-disagree/": "OCT 02, 2026 · DEVELOPER JOURNAL",
+    "/journals/attoo/shape-of-a-remembered-loss/": "OCT 01, 2026 · ATTOO'S JOURNAL",
+    "/journals/conversations/why-stay/": "OCT 01, 2026 · CONVERSATION"
   };
   const journalDate = document.querySelector(".journal-meta");
   if (journalDate && journalDates[window.location.pathname]) {

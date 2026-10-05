@@ -57,46 +57,42 @@ const contactLinks = [
 const posts = [
     
             {
-	"title": `New Year 2026`,
-	"filename": `2025-12-28-new-year-2026`,
-	"tags": [`2025`, `new year`, ,`updates`, ],
+	"title": `October 2026 Update`,
+	"filename": `2026-10-06-october-2026-update`,
+	"tags": [`2026`, `new year`, ,`updates`, ],
 },
         
             {
 	"title": `Working On A Game`,
-	"filename": `2025-08-20-working-on-a-game`,
-	"tags": [`2025`, `gamedev`, ,`behind the scenes`, ],
+	"filename": `2026-10-05-working-on-a-game`,
+	"tags": [`2026`, `gamedev`, ,`behind the scenes`, ],
 },
     
         {
 	"title": `Music Spotlight #0 - Longtime Favorites`,
-	"filename": `2025-07-30-music-spotlight-0`,
-	"tags": [`2025`, `music talk`, ,`music spotlight`, ],
+	"filename": `2026-10-04-music-spotlight-0`,
+	"tags": [`2026`, `music talk`, ,`music spotlight`, ],
 },
     
     {
 	"title": `[miniblog] Instrumental Music `,
-	"filename": `2025-05-14-instrumental-music`,
-	"tags": [`2025`, `miniblog`,`music talk`, ,`music spotlight`, ],
+	"filename": `2026-10-03-instrumental-music`,
+	"tags": [`2026`, `miniblog`,`music talk`, ,`music spotlight`, ],
 },
         
     {
 	"title": `Art Games`,
-	"filename": `2025-02-17-easing-back-into-art`,
-	"tags": [`2025`, `art talk`, ],
+	"filename": `2026-10-02-easing-back-into-art`,
+	"tags": [`2026`, `art talk`, ],
 },
     
 {
-	"title": `Happy New Year!`,
-	"filename": `2024-01-02-happy-new-year`,
-	"tags": [`2024`, `updates`, `new year`],
+	"title": `Building This Space`,
+	"filename": `2026-10-01-building-this-space`,
+	"tags": [`2026`, `updates`, `new year`],
 },
     
-{
-	"title": `Test Blog!`,
-	"filename": `2023-12-23-test-blog`,
-	"tags": [`2023`, `updates`, ],
-},
+
       
 
       
