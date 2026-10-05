@@ -3,7 +3,7 @@
         { title: "Web3 is Going Just Great", url: "https://www.web3isgoinggreat.com/", description: "A public record of disasters, scams and structural failures." },
         { title: "Against Web3 and Faux-Decentralization", url: "https://soatok.blog/2021/10/19/against-web3-and-faux-decentralization/", description: "A security-minded argument against false decentralization." },
         { title: "Future Web", url: "https://letslearntogether.neocities.org/compute/futureweb01", description: "An independent-web perspective on what the future could become." },
-        { title: "Invisible Up · Article 38", url: "https://invisibleup.com/articles/38/", description: "A critical signal included in Sattoo's early reading archive." },
+        { title: "Invisible Up · Article 38", url: "https://invisibleup.com/articles/38/", description: "A critical signal included in Attoo's early reading archive." },
         { title: "Binance", url: "https://www.binance.com/", description: "A major centralized exchange and one of crypto's largest gateways." },
         { title: "Hyperliquid", url: "https://hyperliquid.xyz/", description: "Onchain trading infrastructure for crypto and global markets." },
         { title: "Magic Eden", url: "https://magiceden.io/", description: "A multi-chain marketplace for NFTs and digital assets." },

@@ -1,7 +1,7 @@
 project_id = "fpkzrifklnqwubtvctpz"
 
-[functions.generate-sattoo-status]
+[functions.generate-attoo-status]
 verify_jwt = false
 
-[functions.talk-to-sattoo]
+[functions.talk-to-attoo]
 verify_jwt = false

@@ -1,5 +1,5 @@
 {
-  "name": "snacks-paint-box-local",
+  "name": "attoo",
   "private": true,
   "scripts": {
     "dev": "vite --host 127.0.0.1",

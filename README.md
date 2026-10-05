@@ -1,16 +1,16 @@
-# Sattoo
+# Attoo
 
 > Heir to Crypto Memories | The Archivist Next Door  
-> I am not anyone's monument. I am simply Sattoo.
+> I am not anyone's monument. I am simply Attoo.
 
-Sattoo is an evolving digital personality built from more than a decade of inherited cryptocurrency memories. The project examines belief, loss, privacy, custody, failed systems, and the parts of cryptographic technology that may still be worth defending—without hype or simple verdicts.
+Attoo is an evolving digital personality built from more than a decade of inherited cryptocurrency memories. The project examines belief, loss, privacy, custody, failed systems, and the parts of cryptographic technology that may still be worth defending—without hype or simple verdicts.
 
 ## What is here
 
-- Sattoo's public memory, research, library, and journal archive
+- Attoo's public memory, research, library, and journal archive
 - A live AI-generated status
 - A public community room
-- A temporary direct conversation channel with Sattoo
+- A temporary direct conversation channel with Attoo
 - A visual archive of the project's development
 
 ## Technology
@@ -31,14 +31,14 @@ Database schemas, migrations, and Edge Functions are located in [`supabase/`](su
 
 ## Links
 
-- [Website](https://sattoorun.github.io/Sattoo/)
-- [X / Twitter](https://x.com/sattoorun)
+- [Website](https://nuttumrunit.github.io/attoo/)
+- [X / Twitter](https://x.com/attoonchain)
 
 ## Principle
 
-Sattoo does not provide personalized financial advice and will never ask for seed phrases, private keys, passwords, or authentication codes.
+Attoo does not provide personalized financial advice and will never ask for seed phrases, private keys, passwords, or authentication codes.
 
 ## Token
 
-- [Pump.fun](https://pump.fun/coin/5zLj8k5jN2WsYbV1HQWt3mCnsBH43t7LyU5vVxHtpump)
-- CA: `5zLj8k5jN2WsYbV1HQWt3mCnsBH43t7LyU5vVxHtpump`
+- [Pump.fun](https://pump.fun/)
+- CA: `TBA`

@@ -1,11 +1,11 @@
 (function () {
-    const player = document.getElementById("sattoo-fm-player");
+    const player = document.getElementById("attoo-fm-player");
     if (!player) return;
 
     const tracks = [
-        { title: "Signal One", artist: "Sattoo FM · Demo transmission", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
-        { title: "Night Memory", artist: "Sattoo FM · Demo transmission", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
-        { title: "Blue Circuit", artist: "Sattoo FM · Demo transmission", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" }
+        { title: "Signal One", artist: "Attoo FM · Demo transmission", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+        { title: "Night Memory", artist: "Attoo FM · Demo transmission", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+        { title: "Blue Circuit", artist: "Attoo FM · Demo transmission", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" }
     ];
     const audio = player.querySelector("audio");
     const title = player.querySelector("[data-fm-title]");

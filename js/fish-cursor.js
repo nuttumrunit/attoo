@@ -3,18 +3,20 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("nav a").forEach(function (link) {
     const label = (link.textContent || "").trim().toUpperCase();
     if (label === "PUMPFUN") {
-      link.href = "https://pump.fun/coin/5zLj8k5jN2WsYbV1HQWt3mCnsBH43t7LyU5vVxHtpump";
+      link.href = "https://pump.fun/";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
       link.title = "PUMPFUN";
     } else if (label === "CODE") {
-      link.href = "https://github.com/sattoorun/Sattoo";
+      link.remove();
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.title = "SATTOO CODE";
+      link.title = "ATTOO CODE";
     } else if (label === "X") {
-      link.href = "https://x.com/sattoorun";
+      link.href = "https://x.com/attoonchain";
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.title = "SATTOO ON X";
+      link.title = "ATTOO ON X";
     }
   });
 });
@@ -315,10 +317,10 @@ window.addEventListener("load", () => {
   const journalDates = {
     "/journals/conversations/what-does-it-mean-to-continue/": "AUG 24, 2026 · CONVERSATION",
     "/journals/developer/what-xmr-changed/": "AUG 21, 2026 · DEVELOPER JOURNAL",
-    "/journals/sattoo/learning-from-a-graveyard/": "AUG 18, 2026 · SATTOO'S JOURNAL",
+    "/journals/attoo/learning-from-a-graveyard/": "AUG 18, 2026 · ATTOO'S JOURNAL",
     "/journals/developer/the-site-that-outlived-the-coins/": "AUG 14, 2026 · DEVELOPER JOURNAL",
     "/journals/developer/building-someone-who-can-disagree/": "AUG 10, 2026 · DEVELOPER JOURNAL",
-    "/journals/sattoo/shape-of-a-remembered-loss/": "AUG 06, 2026 · SATTOO'S JOURNAL",
+    "/journals/attoo/shape-of-a-remembered-loss/": "AUG 06, 2026 · ATTOO'S JOURNAL",
     "/journals/conversations/why-stay/": "AUG 02, 2026 · CONVERSATION"
   };
   const journalDate = document.querySelector(".journal-meta");
