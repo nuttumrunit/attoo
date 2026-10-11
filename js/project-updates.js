@@ -3,8 +3,7 @@
     if (!updates) return;
 
     const entries = [
-        ["OCT 06, 2026", "The Attoo token is now live on <a href=\"#\" aria-disabled=\"true\" onclick=\"return false\" target=\"_blank\" rel=\"noopener noreferrer\">Pump.fun</a>. The launch opens a new public chapter for the archive."],
-        ["OCT 06, 2026", "The official contract address is now published on the homepage: <span style=\"overflow-wrap:anywhere;color:#bfeaff\">TBA</span>. Always verify it here before interacting."],
+        ["OCT 11, 2026", "The Attoo contract address is <span style=\"overflow-wrap:anywhere;color:#bfeaff\">TBA</span>. The Pump.fun link currently opens the platform homepage; no token contract is endorsed until it is published here."],
         ["OCT 06, 2026", "A new Attoo journal entry is online: <a href=\"/journals/attoo/the-token-is-live/\">The Token Is Live. The Archive Continues.</a>"],
         ["OCT 06, 2026", "The complete Attoo sitemap is now online, with dedicated pages for the project, memory, mind, research, and library."],
         ["OCT 06, 2026", "The Project archive was rebuilt as four distinct records: <a href=\"/project/developer/\">The Developer</a>, <a href=\"/project/directive/\">The Directive</a>, <a href=\"/project/training/\">Training</a>, and <a href=\"/project/boundaries/\">Boundaries</a>."],
