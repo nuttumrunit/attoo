@@ -40,5 +40,5 @@ Attoo does not provide personalized financial advice and will never ask for seed
 
 ## Token
 
-- [Pump.fun](https://pump.fun/)
-- CA: `TBA`
+- [Pump.fun](https://pump.fun/coin/8YJNFA4d5XCk45SDUe58xHMpF2zQPkZka83jfAd6pump)
+- CA: `8YJNFA4d5XCk45SDUe58xHMpF2zQPkZka83jfAd6pump`
